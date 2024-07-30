@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet"
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+        <script 
+        src="https://kit.fontawesome.com/397fde9f17.js" 
+        crossorigin="anonymous">
+      </script>
+
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" 
+        rel="stylesheet"/>
+        
+        <link rel="stylesheet" 
+        href="style/style.css"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+        <span class="border border-primary"></span>
+  </head>
+
+  <body>
+
+    <div class="container">
+    <div class="weather-app">
+      <h1><strong>
+                  Greetings</strong>
+      </h1>
+
+      <form id="location-form" class="form-inline" >
+        <input type="text" id="search-box" placeholder="Search city" />
+        <input type="submit" value="search" />
+              <button type="button" id="location-emoji">📍</button>
+      </form>
+      <p class="current-update-location"></p>
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li id="current-location">
+              Give your current location
+            </li>
+            <li id="date1"> 
+            </li>
+        <li>
+          <div class="weather-now"><strong>
+          <span id="temperature-posted"></span>
+          <a href="#" id="celsius-link" class="active">℃</a> | <a href="#" id="fahrenheit-link">°F</a></strong>
+       </div>
+        </li>
+          <li id="description">
+          </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul>
+            </br> 
+            <li id="humidity">
+              Humidity 90%
+            </li>
+            <li id ="wind">  
+              Wind 5 Km/H
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div > 
+        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+ id="weather-icon">
+    </div>
+<div id="header-upcoming"><strong>Weather for the next few hours :</strong>
+   
+</div>
+      <div class="row upcoming-weather" id="forecast">
+    </div>
+    </div>
+    <footer id="link">
+    <p class="github-link">
+        This project was coded by
+        <a href="https://github.com/Akonisaho" target="_blank">Takalani Akonisaho</a> and is
+        <a href="https://github.com/Akonisaho/Weather-app.git" target="_blank"> on GitHub</a> and
+        <a href="https://app.netlify.com/teams/akonisaho/sites" target="_blank">hosted on Netlify</a>
+    </p>
+</footer>       
+  </body>
+    <script src="Script.js"></script>
+</html>
